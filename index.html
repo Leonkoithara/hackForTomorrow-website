@@ -23,15 +23,15 @@
 
 <div id="login">
   <h1 style="color: white"> Login </h1>
-  <form action="/home/iambk/Desktop/hackForTomorrow-website/flogin" method="post" style="margin-top: 10%">
+  <form action="flogin" method="post" style="margin-top: 10%">
     <input type="text" required name="fusername" placeholder="username">
     <input type="password" required name="fpassword" placeholder="password">
-    <button type="submit" class="btn btn-success">Farmer login</button>
+    <input type="submit" value="Farmer login">
   </form>
-  <form action="/blogin" method="post" style="margin-top: 10%">
+  <form action="blogin" method="post" style="margin-top: 10%">
       <input type="text" required name="fusername" placeholder="username">
       <input type="password" required name="fpassword" placeholder="password">
-      <button type="submit" class="btn btn-success">Buyer login</button>
+      <input type="submit" value="Buyer login">
   </form>
 </div>
 
@@ -81,7 +81,8 @@
   </div>
   <div>
     <button class="btn btn-primary fsignup" type="submit" onclick="fsignup()">Farmer signup</button>
-    <button class="btn btn-primary bsignup" type="submit">Buyer signup</button>
+    <button class="btn btn-primary bsignup" type="submit" onclick="bsignup()">Buyer signup</button>
+  </div>
   </div>
 </form>
 

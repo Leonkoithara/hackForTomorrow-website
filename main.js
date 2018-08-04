@@ -288,7 +288,7 @@ mongo.connect(process.env.MLAB_URI, (err, db)=> {
   );
   
   app.post('/flogin', function(req, res) {
-    res.json({ username: req.body.fusername , password: req.body.password });
+    res.send({ username: req.body.fusername , password: req.body.fpassword });
     /*passport.use(new LocalStrategy(
       function(username, password) {
         db.collection('users').findOne({ username: username }, function (err, user) {
@@ -305,4 +305,5 @@ mongo.connect(process.env.MLAB_URI, (err, db)=> {
 
 app.use((req, res, next) => {
   return next({status: 404, message: 'not found'});
+});
 });
