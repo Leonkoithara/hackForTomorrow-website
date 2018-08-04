@@ -288,7 +288,8 @@ mongo.connect(process.env.MLAB_URI, (err, db)=> {
   );
   
   app.post('/flogin', function(req, res) {
-    passport.use(new LocalStrategy(
+    res.json({ username: req.body.fusername , password: req.body.password });
+    /*passport.use(new LocalStrategy(
       function(username, password) {
         db.collection('users').findOne({ username: username }, function (err, user) {
           console.log('User '+ username +' attempted to log in.');
@@ -299,7 +300,7 @@ mongo.connect(process.env.MLAB_URI, (err, db)=> {
         });
       }
     ));
-  });
+  });*/
 });
 
 app.use((req, res, next) => {

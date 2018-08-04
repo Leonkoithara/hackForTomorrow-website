@@ -1,0 +1,69 @@
+body{
+	color:white;
+	background-image: url("http://4everstatic.com/images/nature/silhouette-dune-foret,-brume-au-dessus-de-la-foret-206316.jpg");
+}
+
+.navbar{
+	height:70px;
+}
+
+#head {
+	position:absolute;
+  margin-left: -70%;
+  margin-top: -10px;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+#signup {
+  position:absolute;
+  width: 40%; 
+  height:  60%; 
+  background: rgba(0,0,0,0.4);
+  margin-top: 3%; 
+  margin-left:55%; 
+  padding-top:40px; 
+  padding-left:15px;
+}
+
+a {
+  color: white;
+  padding: 40px;
+}
+
+#second{
+	margin-top:480px;
+}
+
+#exampleModalCenter{
+	color:black;
+}
+
+.fsignup {
+  margin-left: 10%;
+}
+
+.bsignup {
+  margin-left: 28%;
+}
+
+#login {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  padding-left: 3%;
+  width: 30%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+
