@@ -1,0 +1,13 @@
+[
+    {
+        "arguments": [
+            "c++", 
+            "-c", 
+            "-o", 
+            "sorting.o", 
+            "sorting.cpp"
+        ], 
+        "directory": "/home/leon/.Programming/hackForTomorrow", 
+        "file": "sorting.cpp"
+    }
+]
